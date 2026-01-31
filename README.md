@@ -1,6 +1,6 @@
 # sp26-project-team3
 ## Title
-> studySpartan
+> studySpartan.
 
 ## Team Members
 > Huda Abukhass
