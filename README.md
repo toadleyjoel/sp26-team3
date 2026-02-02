@@ -27,8 +27,3 @@
     3. View student bookings - Tutors can see which students booked sessions, and manage their schedule accordingly.
     4. Reply to feedback - Tutors can respond to student feedback to clarify issues or acknowledge positive comments.
 
-3. SysAdmin (moderators, presumably us):
-    1. Manage user profiles - SysAdmins make sure users' information is correctly displayed and appropriate for the platform.
-    2. Moderate messaging - SysAdmins make sure users are using the chatting features appropriately and responding to chat reports made.
-    3. General Moderatation - SysAdmins check that inappropriate profiles, chat features, and off-platform wrongdoing that is reported is properly dealt with.
-    4. View usage - SysAdmins should be able to check the aspects of the application as though they were "playing any role," to ensure that the application works smoothly. 
