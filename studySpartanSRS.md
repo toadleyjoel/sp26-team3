@@ -1,34 +1,43 @@
 
 # Requirements – Starter Template
 
-**Project Name:** Your App Name \
-**Team:** Names and roles \
-**Course:** CSC 340\
-**Version:** 1.0\
-**Date:** 2026-01-30
+**Project Name:** StudySpartan
+**Team:** Huda Abukhass-Students & Joel Pickett-Tutors
+**Course:** CSC 340
+**Version:** 1.0
+**Date:** 2026-02-13
 
 ---
 
 ## 1. Overview
-**Vision.** One or two sentences: who this is for, the core problem, and the outcome.
+**Vision.** StudySpartan is a web-based tutoring platform that connects students with tutors by allowing tutors to host study sessions and students to book them, improving accessibility to academic support and streamlining session management.
 
 **Glossary** Terms used in the project
-- **Term 1:** description.
-- **Term 2:** description
+Session: A scheduled tutoring meeting created by a tutor.
+Booking: A student reserving a seat in a tutoring session.
+Profile: A user’s personal information including subjects, bio, and availability.
+Feedback: A rating or review submitted by a student after a session.
 
 **Primary Users / Roles.**
-- **Customer (e.g., Student/Patient/Pet Owner/etc. )** — 1 line goal statement.
-- **Provider (e.g., Teacher/Doctor/Pet Sitter/etc. )** — 1 line goal statement.
-- **SysAdmin (optional)** — 1 line goal statement.
+* Student — Books tutoring sessions, manages profile, and leaves feedback.
+* Tutor — Hosts tutoring sessions, manages subjects and availability, and tracks bookings.
+
 
 **Scope (this semester).**
-- <capability 1>
-- <capability 2>
-- <capability 3>
+<User registration and login>
+<Student and tutor profile management>
+<Tutors create, edit, and delete sessions>
+<Students browse and book sessions>
+<Students leave feedback for tutors>
+<Admin manages user accounts>
+
 
 **Out of scope (deferred).**
-- <deferred 1>
-- <deferred 2>
+<Payment processing>
+<Real-time video conferencing integration>
+<AI tutor matching>
+<Mobile application>
+
 
 > This document is **requirements‑level** and solution‑neutral; design decisions (UI layouts, API endpoints, schemas) are documented separately.
 
@@ -171,15 +180,27 @@
 ---
 
 ## 3. Non‑Functional Requirements (make them measurable)
-- **Performance:** description 
-- **Availability/Reliability:** description
-- **Security/Privacy:** description
-- **Usability:** description
+- **Performance:** 
+*The system shall load dashboard pages within 2 seconds under normal conditions.
+*The system shall support at least 200 concurrent users. 
+- **Availability/Reliability:** 
+*The system shall maintain 95% uptime during the semester.
+*User data shall be saved without loss.
+- **Security/Privacy:** 
+*Passwords shall be encrypted.
+*Only authenticated users may access dashboards.
+*Students can only edit their own profiles.
+- **Usability:** 
+*The system shall be accessible through modern browsers.
+*The UI shall be consistent across student and tutor views.
 
 ---
 
 ## 4. Assumptions, Constraints, and Policies
-- list any rules, policies, assumptions, etc.
+*The platform is web-based.
+*Payment functionality is not included this semester.
+*Real-time tutoring (Zoom integration) is not required.
+*The system assumes users have internet access.
 
 ---
 
@@ -194,5 +215,6 @@
 ---
 
 ## 6. Change Management
-- Stories are living artifacts; changes are tracked via repository issues and linked pull requests.  
-- Major changes should update this SRS.
+User stories will be tracked as GitHub issues.
+Pull requests must reference and close related issues.
+Major requirement changes must update this SRS document.
