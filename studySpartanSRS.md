@@ -22,7 +22,7 @@ Feedback: A rating or review submitted by a student after a session.
 * Student — Books tutoring sessions, manages profile, and leaves feedback.
 * Tutor — Hosts tutoring sessions, manages subjects and availability, and tracks bookings.
 
-
+\
 **Scope (this semester).**
 <User registration and login>
 <Student and tutor profile management>

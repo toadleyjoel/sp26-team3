@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Write Review</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+    <h4>TutorConnect</h4>
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="browse.html">Browse Tutors</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="register.html">Logout</a>
+    </nav>
+</header>
+
+<main>
+
+    <div class="card review-form-card">
+        <h2>Write a Review</h2>
+
+        <form>
+            <label>Rating</label>
+            <select>
+                <option>⭐</option>
+                <option>⭐⭐</option>
+                <option>⭐⭐⭐</option>
+                <option>⭐⭐⭐⭐</option>
+                <option>⭐⭐⭐⭐⭐</option>
+            </select>
+
+            <label>Comment</label>
+            <textarea placeholder="Write your feedback..." rows="4"></textarea>
+
+            <button type="button" onclick="window.location.href='reviews.html'">
+                Submit Review
+            </button>
+        </form>
+    </div>
+
+</main>
+
+<footer>
+    © 2026 TutorConnect
+</footer>
+
+</body>
+</html>
