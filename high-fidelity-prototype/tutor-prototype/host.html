@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Host Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header class="header">
+        <h4>StudySpartan</h4>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="browse.html">Browse Students</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="register.html">Logout</a>
+        </nav>
+    </header>   
+
+
+    <main>
+        <div class="card request-card">
+            <h2>Host a Session</h2>
+
+            <form>
+                <label>Select Date</label>
+                <input type="date">
+
+                <label>Select Time</label>
+                <input type="time">
+
+                <label>Message</label>
+                <textarea placeholder="Describe what you will work on..." rows="4"></textarea>
+
+                <button type="button" onclick="window.location.href='dashboard.html'">
+                Submit Request</button>
+            </form>
+        </div>
+
+    </main>
+
+
+
+
+
+    <footer>
+        © StudySpartan 2026
+    </footer>
+
+</body>
+</html>
