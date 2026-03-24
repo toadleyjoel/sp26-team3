@@ -36,9 +36,9 @@ public class ReviewController {
                 .orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
 
-    @GetMapping("/subscription/{subscriptionId}")
-    public ResponseEntity<List<Review>> getReviewsBySubscriptionId(@PathVariable Long subscriptionId) {
-        List<Review> reviews = reviewService.getReviewsBySessionId(subscriptionId);
+    @GetMapping("/session/{sessionId}")
+    public ResponseEntity<List<Review>> getReviewsBySessionId(@PathVariable Long sessionId) {
+        List<Review> reviews = reviewService.getReviewsBySessionId(sessionId);
         return new ResponseEntity<>(reviews, HttpStatus.OK);
     }
 
