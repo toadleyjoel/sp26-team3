@@ -12,6 +12,8 @@
             <a href="/">Home</a>
             <a href="/services/view">Services</a>
             <a href="/students/create">Register</a>
+            <a href="/reviews/new">Write Review</a>
+            <a href="/reviews">Reviews</a>
         </nav>
     </header>
 
@@ -29,6 +31,7 @@
             </p>
 
             <a href="/services/view" class="subscribe-btn">Explore Services</a>
+            <a href="/reviews" class="subscribe-btn">View Reviews</a>
         </section>
     </main>
 
