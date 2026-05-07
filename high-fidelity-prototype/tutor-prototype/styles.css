@@ -1,0 +1,163 @@
+/*
+This is copied from the Student section for continuity.
+*/
+
+/* =========================
+   GLOBAL LAYOUT
+========================= */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0e6f6;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;   /* full screen height */
+}
+
+main {
+    flex: 1;  /* pushes footer down */
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #120255;
+    color: #ffd000;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header h4 {
+    font-size: 28px;
+    margin: 0;
+}
+
+nav a {
+    color: #ffd000;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.card h2 {
+    color: #120255;
+    margin-top: 0;
+}
+
+/* Smaller Centered Cards */
+.review-card,
+.review-form-card,
+.request-card,
+.register-card {
+    max-width: 600px;
+    margin: 0 auto 25px auto;
+}
+
+.review-form-card h2,
+.request-card h2,
+.register-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   FORMS
+========================= */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* =========================
+   REVIEWS
+========================= */
+
+.rating {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.review-btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffd000;
+    color: #FCF5EE;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #120255;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #120255;
+    color: #ffd000;
+}

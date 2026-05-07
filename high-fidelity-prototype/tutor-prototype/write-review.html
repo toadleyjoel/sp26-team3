@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Review</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+    <h4>StudySpartan</h4>
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="browse.html">Browse Students</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="register.html">Logout</a>
+    </nav>
+</header>
+
+<main>
+
+    <div class="card review-form-card">
+        <h2>Write a Review</h2>
+
+        <form>
+            <label>Rating</label>
+            <select>
+                <option>⭐</option>
+                <option>⭐⭐</option>
+                <option>⭐⭐⭐</option>
+                <option>⭐⭐⭐⭐</option>
+                <option>⭐⭐⭐⭐⭐</option>
+            </select>
+
+            <label>Comment</label>
+            <textarea placeholder="Write your feedback..." rows="4"></textarea>
+
+            <button type="button" onclick="window.location.href='reviews.html'">
+                Submit Review
+            </button>
+        </form>
+    </div>
+
+</main>
+
+<footer>
+    © 2026 StudySpartan
+</footer>
+
+</body>
+</html>
