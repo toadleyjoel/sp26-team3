@@ -1,0 +1,315 @@
+/* =========================
+   GLOBAL LAYOUT
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f0e6f6, #efe3f5);
+    font-family: Arial, sans-serif;
+    color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    max-width: 1100px;
+    width: 100%;
+    margin: 50px auto;
+    padding: 0 20px 40px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #120255;
+    color: #ffd000;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+
+.header h4 {
+    font-size: 28px;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #ffd000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+/* =========================
+   PAGE TITLES
+========================= */
+
+.page-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.page-title h1 {
+    font-size: 44px;
+    color: #120255;
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    font-size: 18px;
+    color: #5a4d78;
+    margin: 0;
+}
+
+/* =========================
+   SERVICE GRID
+========================= */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 28px;
+    margin-top: 30px;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 8px 22px rgba(18, 2, 85, 0.10);
+    border: 1px solid rgba(18, 2, 85, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    width: 100%;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(18, 2, 85, 0.16);
+}
+
+.card h2 {
+    color: #120255;
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-size: 30px;
+}
+
+.card p {
+    color: #444;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 22px;
+}
+
+/* Smaller Centered Cards */
+.review-card,
+.review-form-card,
+.request-card,
+.register-card {
+    max-width: 700px;
+    margin: 0 auto 25px auto;
+}
+
+.review-form-card h2,
+.request-card h2,
+.register-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   BADGES / LABELS
+========================= */
+
+.badge {
+    display: inline-block;
+    background-color: #120255;
+    color: #ffd000;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+/* =========================
+   FORMS
+========================= */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #120255;
+}
+
+input,
+select,
+textarea {
+    padding: 12px 14px;
+    margin-top: 6px;
+    border-radius: 10px;
+    border: 1px solid #d5cae2;
+    font-size: 15px;
+    background-color: #faf8fc;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #120255;
+    box-shadow: 0 0 0 4px rgba(18, 2, 85, 0.08);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* =========================
+   REVIEWS
+========================= */
+
+.rating {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #120255;
+}
+
+.review-btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+button,
+.btn,
+.subscribe-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 22px;
+    background-color: #ffd000;
+    color: #120255;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    box-shadow: 0 6px 14px rgba(255, 208, 0, 0.25);
+}
+
+button:hover,
+.btn:hover,
+.subscribe-btn:hover {
+    background-color: #120255;
+    color: #ffd000;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 18px rgba(18, 2, 85, 0.22);
+}
+
+/* =========================
+   BACK LINK
+========================= */
+
+.back-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #120255;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.back-link:hover {
+    color: #7a57d1;
+    text-decoration: underline;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    padding: 22px;
+    background-color: #120255;
+    color: #ffd000;
+    margin-top: auto;
+    font-size: 15px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 12px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .header h4 {
+        font-size: 24px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .page-title h1 {
+        font-size: 34px;
+    }
+
+    .card {
+        padding: 22px;
+    }
+
+    .card h2 {
+        font-size: 26px;
+    }
+}
