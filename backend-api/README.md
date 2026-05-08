@@ -1,3 +1,4 @@
+<img width="1852" height="2058" alt="uml-diagram" src="https://github.com/user-attachments/assets/1ac3c636-a947-4aae-8aa2-5b1336bf9f49" />
 # SpartanStudy Backend API Documentation
 
 **Version:** 1.0  
